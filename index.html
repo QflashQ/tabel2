@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Creare Postare</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Creare postare</h1>
+        <form action="procesare.php" method="post">
+            <label for="titlu"><b>Titlu</b></label>
+            <input type="text" id="titlu" name="titlu" placeholder="Titlul postarii">
+            <label for="imagine"><b>Imagine</b></label>
+            <input type="text" id="linkImagine" name="linkImagine" placeholder="Link la imagine">
+            <label for="descriere"><b>Descriere pe scurt</b></label>
+            <textarea id="descriere" name="descriere" rows="3" maxlength="120" placeholder="Maxim 120 simboluri"></textarea> 
+            <label for="textPostare"><b>Textul postării</b></label>
+            <textarea id="textPostare" name="textPostare" rows="10" maxlength="4000" placeholder="Maxim 4000 simboluri"></textarea>
+            <button type="submit">CREARE</button>
+        </form>
+    </div>
+</body>
+</html>
